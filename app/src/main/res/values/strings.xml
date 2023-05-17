@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HotelBooking</string>
+    <string name="payment_method_text">Phương thức thanh toán: %1$s</string>
+    <string name="payment_amount_text">Số tiền thanh toán: %1$.2f đ</string>
+    <string name="payment_confirmation_error_message">Lỗi xác nhận thanh toán: %1$s</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="check_in_date">Check-in date</string>
+    <string name="check_out_date">Check-out date</string>
+    <string name="hotel_price">Hotel price per night:</string>
+    <string name="card_number">Card number</string>
+    <string name="card_holder_name">Card holder name</string>
+    <string name="card_expiration_date">Expiration date</string>
+    <string name="card_cvv">CVV</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="total_amount">Total amount:</string>
+    <string name="payment_successful">Payment Successful!</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="try_again">Please try again later.</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="cvv">CVV</string>
+    <string name="pay">Pay</string>
+    <string name="card_number_hint">Nhập số thẻ</string>
+    <string name="card_expiry">Enter card expiry date</string>
+    <string name="card_expiry_hint">12/24</string>
+    <string name="card_cvv_hint">Enter CVV code</string>
+
+</resources>

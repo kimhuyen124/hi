@@ -54,7 +54,7 @@ class PaymentActivity : AppCompatActivity() {
     // Calculate the total amount to pay
     private fun calculateTotalAmount(): Double {
         val numOfDays = getNumOfDays(checkInDate ?: "", checkOutDate ?: "")
-        return numOfDays * (hotelPrice ?: 0.0)
+        return numOfDays * 100000000.00
     }
 
     // Save payment information to Firebase database
@@ -63,6 +63,10 @@ class PaymentActivity : AppCompatActivity() {
         val cardNumber = binding.cardNumber.text.toString()
         val cardExpirationDate = binding.cardExpiry.text.toString()
         val cardCvv = binding.cardCvv.text.toString()
+        if (cardCvv.length > 3 || cardCvv.length < 3){
+            Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+            return
+        }
 
         // Validate payment information
         if (cardNumber.isEmpty() || cardExpirationDate.isEmpty() || cardCvv.isEmpty()) {
